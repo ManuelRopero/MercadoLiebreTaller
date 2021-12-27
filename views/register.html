@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <form action="/mensaje">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="lnombre" name="nombre"><br>
+            <label for="apellido">Apellidos</label><br>
+            <input type="text"><br>
+            <label for="nacimiento">Fecha De nacimiento</label><br>
+            <input type="date"><br>
+            <label for="perfil">Perfi de usuario</label><br>
+            <input type="radio" name="Vendedor" id="vendedor" value="Vendedor">
+            <label for="vendedor">Vendedor</label>
+            <input type="radio" name="Vendedor" id="comprador" value="Comprador">
+            <label for="comprador">Comprador</label><br>
+            <label for="intereses">Intereses</label><br>
+            <input type="radio" id="electro" value="electro">
+            <label for="electro">electro</label>
+            <input type="radio" id="moda" value="moda">
+            <label for="moda">moda</label>
+            <input type="radio" id="hogar" value="hogar">
+            <label for="hogar">hogar</label>
+            <input type="radio" id="jugeteria" value="jugeteria">
+            <label for="jugeteria">jugeteria</label>
+            <input type="radio" id="vidaSana"  value="VidaSana">
+            <label for="VidaSana">Vida sana</label><br>
+            <label for="foto">Elegí tu foto de usuario</label><br>
+            <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple /><br><br>
+            <input type="password" id="contraseña" name="lcontra" placeholder="Elegí contraseña"><br>
+            <input type="password" id="contfirma" name="lconfirm" placeholder="Confirma contraseña"> <br><br>
+            <button type="submit">Crear</button>
+            <button type="reset">Borrar</button>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
