@@ -172,30 +172,12 @@ header div.logo{
     
 }
 header .form{
-    display: flex;
-    align-items: center;
-    padding: 2px;
     font-size: 11px;
-}
-header nav{
-    font-size: 12px;
-    margin-left: 20px;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
+    margin-left: 1px;
+    margin-top: -83px;
 }
 
 header .form .input{
-    display: flex;
-    position: relative;
-    top: 40px;
-    right: 165px;
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
@@ -207,25 +189,39 @@ header .form .input{
 
 
 header .form .submit{
-    display: flex;
-    position: relative;
-    top: 40px;
-    right: 162px;
     background-color: #FFF;
     border: 1px solid #000;
     color: rgb(0, 0, 0);
-    width: 20%;
+    width: 20px;
     font-size: 17px;
+    margin-top: -20px;
+    margin-left: 216px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+    display: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
 }
 header .letra{
     text-align: center;
-    margin-top: 20px;
+    margin-top: -55px;
     margin-bottom: 15px;
     font-size: 13px;
+    position: initial;
 
 }
 div.burger-menu{
     text-align: center;
+    margin-top: -7px;
 }
 
 div.burger-menu i{
@@ -323,8 +319,14 @@ article div.main-article{
 .tarjet{
     font-size: 12px;
 }
-
+/* RESPONSIVE*/
 @media (min-width: 361px){
+    header ul li{
+        display: block;
+    }
+    div.burger-menu{
+        display: none;
+    }
     main section article .description{
         display: block;
     }
@@ -356,6 +358,8 @@ article div.main-article{
         width: 22%;
     }
 }
+
+/*FOOTER*/
 footer{
     
     margin-left: 40px;
