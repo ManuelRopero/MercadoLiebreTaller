@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+h3{
+    font-size: 24px;
+}
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+                 /*********************Header*********************/
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header{
+    background-color: #EAC926;
+    width: 100%;
+}
+header div.logo, header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+header .form{
+    font-size: 11px;
+    display: flex;
+}
+
+header .top-header .form .input{
+    background-color: #FFF;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 80%;
+    height: 20px;
+    margin-top: 20px;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    color: rgb(75, 73, 73);
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: -6px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+header ul li{
+    list-style-type: none;
+    display: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width: 361px){
+    header .letra{
+        text-align: center;
+        margin-top: -87px;
+        margin-bottom: 15px;
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+div.burger-menu{
+    text-align: center;
+    margin-top: -56px;
+}
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 8px;
+    width: 40px;
+}
+                 /*********************MAIN*********************/
+
+div.last-visit, div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount, .description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px; 
+}
+main section article :hover .description{
+    display: contents;
+  }
+section.banner img{
+    width: 100%;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform 0.3s ease-in;
+}
+main section article:hover i{
+    transform: rotate(-90deg);
+}
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+.tarjet{
+    font-size: 12px;
+}
+
+
+/*FOOTER*/
+
+
+div.pie_de_pagina,div.pie_de_pagina i{
+    padding-top: 13px;
+    padding-bottom: 12px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+div.pie_de_pagina i:hover{
+    color: #EAC926;
+
+}
+
+div.pie_de_pagina i{
+    font-size: 2em;
+    color: blue;
+    padding-bottom: 10px;
+}
+
+                                    /* RESPONSIVE*/
+                                    
+@media (min-width: 361px){
+
+    header div.logo, header .form, header .letra{
+        width: 33%;
+        display: flex;
+    }
+    header div.letra, header div.form{
+        padding-top: 2%;
+    }
+    header .top-header .form .input{
+        background-color: #FFF;
+        display: flex;
+        border: 1px solid rgb(49, 49, 49);
+        border-radius: 0px;
+        outline: none;
+        color: #666;
+        padding: 2px;
+        width: 80%;
+        height: 20px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    header .top-header .form .submit{
+        border: 1px solid rgb(49, 49, 49);
+        border-radius: 0px;
+        outline: none;
+        color: #666;
+    }
+    header .form  {
+        width: 33%;
+        display: flex;
+    }
+    div.burger-menu{
+        display: none;
+    }
+    header ul li{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+    }
+/*
+    .contenedorFlex{
+        display: flex;
+        width: 100%;
+    }
+    .contenedorFlex li{
+        padding: 0px 4px;
+    }
+    .Caja2{
+        display: flex;
+    }*/
+    header nav ul{
+        display: flex;
+        justify-content: stretch;
+        justify-items: center;
+    }
+    header nav{
+        padding: 10px;
+        justify-content: space-between;
+        display: flex;
+        align-items: flex end;
+    }
+    .Caja1,.Caja2{
+        gap: 10px;
+    }
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price, .discount{
+        width: 50%;
+    }
+    .pie_de_pagina{
+        display: flex;
+    }
+}
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+
+
+/*FORMULARIOS*/
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container_form{
+    background-color: rgb(218, 214, 214);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+.container_form input[type="text"], .container_form input[type=date], .container_form input[type=password]{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: none;
+    height: 28px;
+}
+.container_form label{
+    margin-left: 5%;
+}
+.container_form button{
+    margin-left: 23%;
+}
+.container_form input[type="checkbox"]{
+    width: 4%;
+    display: flex;
+    margin-left: 5%;
+    border: none;
+    height: 28px;
+}
+.container_form label[for="Perfil"], .container_form label[for="nacimiento"], .container_form label[for="intereses"]{
+    font-weight: bolder;
+    margin-left: 3%;
+    margin-bottom: 5px;
+}
+
+
+#formLogin {
+    display: flex;
+    justify-content: center;
+
+}
+#formLogin input[type="submit"]{
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+}
