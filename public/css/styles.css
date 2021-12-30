@@ -135,9 +135,11 @@ h3,
 
 .description{
     display: none;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
-
+main section article :hover .description{
+    display: contents;
+  }
 section.banner img{
     width: 100%;
 }
@@ -173,8 +175,11 @@ main section article i{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: transform 0.3s ease-in;
 }
-
+main section article:hover i{
+    transform: rotate(-90deg);
+}
 main section h3{
     margin: 20px 0px;
 }
@@ -386,4 +391,11 @@ text-align: center;
     font-size: 13px;
     text-align: left;
     margin-bottom: 20px
+}
+
+.contFlexPrincipal{
+    display: flex; 
+}
+.contFlexPrincipal > div{
+    width: 33%;
 }
