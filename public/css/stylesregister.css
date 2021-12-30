@@ -1,0 +1,433 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background: yellow;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container_form{
+    background-color: rgb(218, 214, 214);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 20%;
+    padding: 10px;
+    overflow: scroll;
+    border-radius: 5px;
+
+}
+.container_form input[type="text"], .container_form input[type=date], .container_form input[type=password]{
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: none;
+    height: 28px;
+}
+.container_form label{
+    margin-left: 5%;
+}
+.container_form button{
+    margin-left: 23%;
+}
+.container_form input[type="checkbox"], .container_form input[type=radio]{
+    width: 4%;
+    display: flex;
+    margin-left: 5%;
+    border: none;
+    height: 28px;
+}
+.container_form label[for="Perfil"], .container_form label[for="nacimiento"], .container_form label[for="intereses"]{
+    font-weight: bolder;
+    margin-left: 3%;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*HEADER*/
+
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+
+}
+
+header div.logo{
+    padding: 10px;
+    margin-bottom: 80px;
+    
+}
+header .form{
+    font-size: 11px;
+}
+
+header .top-header .form .input{
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 90%;
+    margin-top: 20px;
+}
+
+
+header .form .submit {
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    color: rgb(75, 73, 73);
+    width: 20px;
+    font-size: 15px;
+    margin-top: -19px;
+    margin-left: 80%;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+    display: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header .letra{
+    text-align: center;
+    margin-top: -87px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+div.burger-menu{
+    text-align: center;
+    margin-top: -64px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+.tarjet{
+    font-size: 12px;
+}
+/* RESPONSIVE*/
+@media (min-width: 361px){
+    header .top-header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: -59px;
+        
+    }
+    .top-header > div{
+        width: 30%;
+    }
+    header .top-header .logo{
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top-header .form .input{
+        font-size: 11px;
+        margin-left: 9%;
+        margin-top: 15%;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    
+    header  .top-header .form .submit {
+        margin-left: 62%;
+
+    }
+    header .letra{
+        padding-right: 20px;
+        margin-top: -135px;
+        margin-left: 229px;
+        
+    }
+    header ul li{
+        display: block;
+    }
+    .contenedorFlex{
+        display: flex;
+        font-size: 65%;
+        
+    }
+    .contenedorFlex > div{
+        width: 10%;
+    }
+    nav ul{
+        display: flex;
+        width: 10%;
+    }
+    .Caja2{
+        margin-left: 62%;
+    }
+
+    div.burger-menu{
+        display: none;
+    }
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+@media (min-width: 1572px){
+    header .top-header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        
+    }
+    .top-header > div{
+        width: 30%;
+    }
+    header .top-header .logo{
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top-header .form .input{
+        font-size: 11px;
+        margin-left: 9%;
+        margin-top: 15%;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    
+    header  .top-header .form .submit {
+        margin-left: 62%;
+
+    }
+    header .letra{
+        margin-left: 75px;
+        margin-top: 60px;
+        padding-right: 20px;
+
+
+    }
+    .contenedorFlex{
+        display: flex;
+        font-size: 115%;
+        
+    }
+    .contenedorFlex > div{
+        width: 50%;
+    }
+    nav ul{
+        display: flex;
+        width: 100%;
+    }
+    .Caja2{
+        margin-left: 62%;
+    }
+}
+
+/*FOOTER*/
+footer{
+    
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.tarjet{
+   text-align: center;
+    margin-bottom: 10px;
+    color: blue;
+    font-size:30px;
+    margin-top: 100px;
+    
+}
+.letrap{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 17px;
+}
+.regalo{
+    
+text-align: center;
+    margin-bottom: 10px;
+    color: blue;
+    font-size:30px;
+    margin-top: 70px;
+}
+.letrap1{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px
+}
+.seguridad{
+    text-align: center;
+    margin-bottom: 10px;
+    color: blue;
+    font-size:30px;
+    margin-top: 70px;
+}
+.letrap2{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px
+}
+.letrap3{
+    display: flex;
+    position: relative;
+    right: 25px;
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 20px
+}
+
+.contFlexPrincipal{
+    display: flex; 
+}
+.contFlexPrincipal > div{
+    width: 33%;
+}
