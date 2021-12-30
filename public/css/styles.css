@@ -1,131 +1,3 @@
-/*/* IMPORTS */
-/*@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-
-/* NORMALIZACIÓN */
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* VARIABLES */
-/*
-:root {
-    /* colores */
- /*   --amarillo: #eac926;
-    --azul: #03264c;
-    --celeste: #1259c3;
-    --gris-oscuro: #666;
-    --gris-claro: #ebebeb;
-    --verde: #39b54a;
-    --negro: #000000;
-    --blanco: #ffffff;
-    /* tamaños de fuentes */
-/*   --text-sm: 1.2em;
-    --text-md: 1.6em;
-    --text-lg: 1.8em;
-    --title-md: 2.4em;
-    /* familias de fuentes */
-  /*  --roboto: "Roboto", sans-serif;
-}
-
-/* ESTILOS COMUNES */
-/*
-html {
-    font-size: 62.5%;
-    font-family: var(--roboto);
-}
-
-h3 {
-    font-size: var(--title-md);
-}
-
-p {
-    font-size: var(--text-sm);
-}
-/* CABECERA */
-/*
-header {
-    background-color: var(--amarillo);
-}
-
-div.top-header {
-    padding: 5%;
-}
-
-header picture.logo {
-    display: block;
-    width: 50%;
-}
-
-header nav {
-    font-size: var(--text-sm);
-}
-
-header ul li {
-    list-style-type: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: var(--negro);
-}
-
-header .form .input {
-    background-color: var(--blanco);
-    border: 1px solid var(--negro);
-    color: var(--gris-oscuro);
-    padding: 2px;
-}
-
-header .form .submit {
-    background-color: var(--blanco);
-    border: 1px solid var(--negro);
-    width: 18px;
-    padding: 2px;
-}
-
-header div.top-header p {
-    text-align: center;
-}
-
-div.burger-menu {
-    text-align: center;
-}
-
-div.burger-menu i {
-    background-color: #0044aa;
-    font-size: 20px;
-    color: var(--blanco);
-    height: 40px;
-    width: 40px;
-    margin: 10px 0 20px 0;         
-    padding: 10px;
-    border-radius: 5px;
-}
-/* BANNER */
-/*
-section.banner img{
-    width: 100%;
-}
-
-footer article p {
-    padding: 20px;
-    text-align: center;
-}
-/* MAIN */
-/*
-main {
-    width: 90%;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-main section article img{
-    width: 100%;
-}
-*/
-
 *{
     margin: 0px;
     padding: 0px;    
@@ -146,7 +18,7 @@ h3{
 div.top-header{
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
+    overflow-x: scroll;
 }
 
 header div.top-header p{
@@ -157,7 +29,7 @@ header div.top-header p{
 
 header{
     background-color: #EAC926;
-    width: auto;
+    width: 100%;
 }
 
 header div.logo,
@@ -173,29 +45,29 @@ header div.logo{
 }
 header .form{
     font-size: 11px;
-    margin-left: 1px;
-    margin-top: -83px;
 }
 
-header .form .input{
+header .top-header .form .input{
     background-color: #FFF;
-    border: 1px solid #000;
+    border: none;
+    border-radius: 5px;
     outline: none;
     color: #666;
     padding: 2px;
-    width: 200px;
-
+    width: 90%;
+    margin-top: 20px;
 }
 
 
-header .form .submit{
+header .form .submit {
     background-color: #FFF;
-    border: 1px solid #000;
-    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: rgb(75, 73, 73);
     width: 20px;
-    font-size: 17px;
-    margin-top: -20px;
-    margin-left: 216px;
+    font-size: 15px;
+    margin-top: -19px;
+    margin-left: 80%;
 }
 header nav{
     font-size: 12px;
@@ -213,15 +85,15 @@ header ul li a{
 }
 header .letra{
     text-align: center;
-    margin-top: -55px;
+    margin-top: -87px;
     margin-bottom: 15px;
     font-size: 13px;
-    position: initial;
-
+    margin-left: 35px;
+    margin-right: 35px;
 }
 div.burger-menu{
     text-align: center;
-    margin-top: -7px;
+    margin-top: -64px;
 }
 
 div.burger-menu i{
@@ -321,9 +193,59 @@ article div.main-article{
 }
 /* RESPONSIVE*/
 @media (min-width: 361px){
+    header .top-header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: -59px;
+        
+    }
+    .top-header > div{
+        width: 30%;
+    }
+    header .top-header .logo{
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top-header .form .input{
+        font-size: 11px;
+        margin-left: 9%;
+        margin-top: 15%;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    
+    header  .top-header .form .submit {
+        margin-left: 62%;
+
+    }
+    header .letra{
+        padding-right: 20px;
+        margin-top: -135px;
+        margin-left: 229px;
+        
+    }
     header ul li{
         display: block;
     }
+    .contenedorFlex{
+        display: flex;
+        font-size: 65%;
+        
+    }
+    .contenedorFlex > div{
+        width: 10%;
+    }
+    nav ul{
+        display: flex;
+        width: 10%;
+    }
+    .Caja2{
+        margin-left: 62%;
+    }
+
     div.burger-menu{
         display: none;
     }
@@ -356,6 +278,57 @@ article div.main-article{
 @media (min-width: 769px){
     main section div.products article{
         width: 22%;
+    }
+}
+@media (min-width: 1572px){
+    header .top-header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        
+    }
+    .top-header > div{
+        width: 30%;
+    }
+    header .top-header .logo{
+        width: 33%;
+        justify-content: center;
+        align-items: center;
+    }
+    header .top-header .form .input{
+        font-size: 11px;
+        margin-left: 9%;
+        margin-top: 15%;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    
+    header  .top-header .form .submit {
+        margin-left: 62%;
+
+    }
+    header .letra{
+        margin-left: 75px;
+        margin-top: 60px;
+        padding-right: 20px;
+
+
+    }
+    .contenedorFlex{
+        display: flex;
+        font-size: 115%;
+        
+    }
+    .contenedorFlex > div{
+        width: 50%;
+    }
+    nav ul{
+        display: flex;
+        width: 100%;
+    }
+    .Caja2{
+        margin-left: 62%;
     }
 }
 
